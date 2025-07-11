@@ -100,7 +100,7 @@ document.getElementById('registration-form').addEventListener('submit', async fu
   try {
     await fetch(`https://api.telegram.org/bot8103865725:AAEzFW2JFhFmLb8yQsYOO1yVUTMQgK6ZlbU/sendMessage`, {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: "5132388647",
         text: message
