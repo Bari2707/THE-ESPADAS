@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESPADA Guild HQ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><header>
+  <div class="logo">ESPADA</div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#info">Info</a>
+    <a href="#stats">Stats</a>
+    <a href="#join">Join</a>
+    <a href="#leader">Leader</a>
+  </nav>
+</header><section id="hero" class="hero" data-aos="fade-up">
+  <img src="espada-logo.png" alt="Guild Logo" class="guild-logo" />
+  <h1>ESPADA GUILD HQ</h1>
+  <p>The strongest warriors in Free Fire. United by skill, loyalty and power.</p>
+  <a href="#join" class="btn">Join Now</a>
+</section><div class="container">  <section id="info" class="section" data-aos="fade-up">
+    <h2>Guild Info</h2>
+    <p><strong>Name:</strong> ESPADA</p>
+    <p><strong>Leader:</strong> ZUKACHI</p>
+    <p><strong>UID:</strong> 5271995973</p>
+  </section>  <section id="stats" class="section card" data-aos="zoom-in">
+    <h2>Guild Stats</h2>
+    <div class="stats">
+      <div><strong>25+</strong><br>Members</div>
+      <div><strong>3</strong><br>Elders</div>
+      <div><strong>Top 5%</strong><br>K/D Ratio</div>
+    </div>
+  </section>  <section id="notice" class="section card" data-aos="fade-up">
+    <h2>Notice Board</h2>
+    <div id="notice-content">Loading latest notice...</div>
+  </section>  <section id="tip" class="section card" data-aos="fade-up">
+    <h2>Training Tips from BR Master J.E.O & Guild Elders</h2>
+    <div id="tip-box">Tap below to generate a pro strategy tip!</div>
+    <button class="btn" onclick="generateTip()">Generate Tip</button>
+  </section>  <section id="join" class="section card" data-aos="fade-up">
+    <h2>Join ESPADA</h2>
+    <form id="registration-form">
+      <div class="form-group">
+        <label>IGN (In-Game Name)</label>
+        <input type="text" name="ign" required />
+      </div>
+      <div class="form-group">
+        <label>UID</label>
+        <input type="text" name="uid" required />
+      </div>
+      <div class="form-group">
+        <label>Battle Royale Rank (BR Rank)</label>
+        <select name="brRank" required>
+          <option value="">Select Rank</option>
+          <option>Silver</option><option>Gold</option><option>Platinum</option><option>Diamond</option>
+          <option>Heroic</option><option>Elite Heroic</option><option>Master</option><option>Elite Master</option><option>Grand Master</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Clash Squad Rank (CS Rank)</label>
+        <select name="csRank" required>
+          <option value="">Select Rank</option>
+          <option>Silver</option><option>Gold</option><option>Platinum</option><option>Diamond</option>
+          <option>Heroic</option><option>Elite Heroic</option><option>Master</option><option>Elite Master</option><option>Grand Master</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Player Role</label>
+        <select name="playerRole" required>
+          <option value="">Select Role</option>
+          <option>Rusher</option><option>Sniper</option><option>Strategist</option><option>All-Rounder</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+      <div id="form-message" style="margin-top: 1rem;"></div>
+    </form>
+  </section>  <section id="leader" class="section card" data-aos="fade-up">
+    <h2>Guild Leader</h2>
+    <div class="profile">
+      <img src="leader.jpg" alt="Leader">
+      <div><strong>ZUKACHI</strong><br>Guild Leader</div>
+    </div>
+    <a href="https://wa.me/9153255013" class="whatsapp">Message ZUKACHI</a>
+  </section>  <section class="section card" data-aos="fade-up">
+    <h2>Guild Elders</h2>
+    <div class="profile">
+      <img src="elder1.jpg" alt="Tekkz">
+      <div><strong>Tekkz</strong><br>Co-Leader</div>
+    </div>
+    <div class="profile">
+      <img src="elder2.jpg" alt="J.E.O">
+      <div><strong>J.E.O</strong><br>Strategist</div>
+    </div>
+  </section>  <section class="section card center-text" data-aos="fade-up">
+    <h2>Join Our WhatsApp Group</h2>
+    <a href="https://chat.whatsapp.com/GaLKjqIThguHTSqf5uDiHO" class="whatsapp">Join Group</a>
+  </section>
+</div><footer>
+  &copy; 2025 ESPADA Guild. Designed by ZUKACHI.
+</footer><script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script src="script.js"></script><script>AOS.init({ duration: 1000 });</script></body>
+</html>
