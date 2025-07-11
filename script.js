@@ -1,21 +1,4 @@
-// script.js
-
 AOS.init({ duration: 1000 });
-
-/* const noticeContent = document.getElementById('notice-content');
-const BOT_URL = "https://espada-notice.onrender.com"; // Change if you're using a different backend
-
-async function loadNotice() {
-  try {
-    const res = await fetch(`${BOT_URL}/get_notice`);
-    const data = await res.json();
-    noticeContent.innerHTML = data.notice || 'No active notice.';
-  } catch (err) {
-    noticeContent.innerHTML = 'Unable to load notice.';
-  }
-}
-
-loadNotice(); */
 
 function generateTip() {
   const sources = ['J.E.O’s Secret', 'Tekkz says', 'ZUKACHI’s Order', 'Guild Intel'];
@@ -98,13 +81,10 @@ document.getElementById('registration-form').addEventListener('submit', async fu
     `👊🏾 More details go come soon... 🚀`;
 
   try {
-    await fetch(`https://api.telegram.org/bot8103865725:AAEzFW2JFhFmLb8yQsYOO1yVUTMQgK6ZlbU/sendMessage`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        chat_id: "5132388647",
-        text: message
-      })
+    await fetch("https://the-espada-backend-py.onrender.com/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: message })
     });
     document.getElementById('form-message').innerText = "✅ Application sent! We go get back to you soon!";
   } catch (error) {
